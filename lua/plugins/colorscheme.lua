@@ -5,9 +5,18 @@ return {
   opts = {
     flavour = "macchiato",
     styles = {
+      comments = { "italic" },
+      conditionals = { "italic" },
+      loops = {},
       functions = { "italic" },
       keywords = { "italic" },
+      strings = {},
+      variables = {},
+      numbers = {},
+      booleans = {},
       properties = { "italic" },
+      types = { "italic" },
+      operators = {},
     },
     integrations = {
       cmp = true,
