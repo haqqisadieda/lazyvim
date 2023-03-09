@@ -36,6 +36,12 @@ local keymaps = {
       "Run MVN",
     },
   },
+  ["<leader>t"] = {
+    name = "+terminal",
+    f = { "<cmd>ToggleTerm direction=float<cr>" .. trn, "Float" },
+    h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
+    v = { "<cmd>ToggleTerm size=50 direction=vertical<cr>" .. trn, "Vertical" },
+  },
 }
 local wk = require("which-key")
 wk.register(keymaps)
