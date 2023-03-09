@@ -1,13 +1,12 @@
 return {
   "hrsh7th/nvim-cmp",
-  dependencies = { "hrsh7th/cmp-emoji", "onsails/lspkind.nvim" },
+  dependencies = { "onsails/lspkind.nvim" },
   ---@param opts cmp.ConfigSchema
   opts = function(_, opts)
     local cmp = require("cmp")
     local luasnip = require("luasnip")
     local lspkind = require("lspkind")
 
-    opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
     local has_words_before = function()
       unpack = unpack or table.unpack
       local line, col = unpack(vim.api.nvim_win_get_cursor(0))
