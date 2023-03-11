@@ -1,6 +1,5 @@
 return {
   "akinsho/bufferline.nvim",
-  after = "catppuccin",
   opts = {
     options = {
       separator_style = "slant",

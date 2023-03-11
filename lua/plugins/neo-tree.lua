@@ -17,6 +17,11 @@ return {
         symbol = "✏️ ",
       },
     }
+    opts.filesystem = {
+      filtered_items = {
+        visible = true,
+      },
+    }
     opts.event_handlers = {
       {
         event = "file_opened",
