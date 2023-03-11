@@ -30,11 +30,7 @@ local keymaps = {
     r = { "<cmd>RunCode<CR>", "Run Code" },
     f = { "<cmd>RunFile<CR>", "Run File" },
     p = { "<cmd>RunProject<CR>", "Run Project" },
-    g = { "<cmd>ToggleTerm size=70 direction=float<cr>clear<cr>gradle run<cr>" .. trn, "Run Gradle" },
-    m = {
-      "<cmd>ToggleTerm size=70 direction=float<cr>mvn exec:java -Dexec.mainClass=com.pojokcode.App<cr>",
-      "Run MVN",
-    },
+    t = { "<cmd>ToggleTerm size=80 direction=float<CR>go test -v ./...<CR>", "Go Test All" },
   },
   ["<leader>t"] = {
     name = "+terminal",
